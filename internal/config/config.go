@@ -2,7 +2,6 @@ package config
 
 import (
 	"github.com/ilyakaznacheev/cleanenv"
-	"github.com/rs/zerolog/log"
 )
 
 type Config struct {
@@ -15,7 +14,7 @@ func MustLoad() Config {
 	var cfg Config
 	err := cleanenv.ReadEnv(cfg)
 	if err != nil {
-		log.Info
+
 	}
 
 }
